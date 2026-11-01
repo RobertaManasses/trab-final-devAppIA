@@ -1,0 +1,11 @@
+# 1. Instalar dependências
+npm install
+
+# 2. Criar o banco
+psql -U postgres -c "CREATE DATABASE app_usuarios;"
+
+# 3. Criar a tabela
+psql -U postgres -d app_usuarios -f banco.sql
+
+# 4. Rodar em desenvolvimento
+npm run dev

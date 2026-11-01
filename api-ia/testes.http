@@ -1,0 +1,34 @@
+### 1) Saúde da API
+GET http://localhost:3001/saude
+
+### 2) Pergunta que o regulamento RESPONDE (ajuste ao conteúdo do seu PDF)
+POST http://localhost:3001/perguntar
+Content-Type: application/json
+
+{
+  "pergunta": "Quantos membros compõem a banca de avaliação do TCC?"
+}
+
+### 3) Pergunta que o regulamento NÃO responde (deve voltar "Não encontrei isso no documento")
+POST http://localhost:3001/perguntar
+Content-Type: application/json
+
+{
+  "pergunta": "Quem ganhou a Copa do Mundo de futebol de 2022?"
+}
+
+### 4) Deve dar 400: pergunta vazia
+POST http://localhost:3001/perguntar
+Content-Type: application/json
+
+{
+  "pergunta": ""
+}
+
+### 5) Deve dar 400: pergunta com mais de 500 caracteres (~553 abaixo)
+POST http://localhost:3001/perguntar
+Content-Type: application/json
+
+{
+  "pergunta": "O TCC é o trabalho de conclusão de curso e precisa seguir todas as regras do regulamento, incluindo a formação da banca avaliadora, os prazos de entrega, as normas de formatação do documento final, a orientação acadêmica, as etapas de qualificação, os critérios de avaliação, a apresentação pública do trabalho, a escolha do tema junto ao orientador, a entrega da versão final da monografia e o cumprimento da carga horária dedicada à disciplina de trabalho de conclusão de curso durante o último período letivo, conforme definido pelo colegiado do curso."
+}
