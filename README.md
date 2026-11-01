@@ -32,7 +32,7 @@ npm start
 
 ### Endereço da API-IA
 ### VERCEL
-https://vercel.com/roberta25/api-ia
+[https://vercel.com/roberta25/api-ia](https://api-ia-five.vercel.app)
 
 
 ### Modelo de IA
