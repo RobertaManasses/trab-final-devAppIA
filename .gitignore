@@ -1,0 +1,21 @@
+# Dependências de qualquer subpasta
+**/node_modules/
+node_modules/
+
+# Arquivos de ambiente e sensíveis
+.env
+**/.env
+
+# Arquivos de build, logs e cache do Node/Vercel/Expo
+dist/
+build/
+.vercel/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Arquivos do sistema operacional e IDEs
+.DS_Store
+Thumbs.db
+.vscode/
