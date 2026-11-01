@@ -18,10 +18,12 @@ https://github.com/RobertaManasses/trab-final-devAppIA
 Após baixar o projeto:
 ### Terminal 1:
 cd api-usuarios
+
 npm start
 
 ### Terminal 2:
 cd app
+
 npm start
 
 ---
